@@ -1,0 +1,41 @@
+body {
+  background-color: #edf2f7;
+}
+/* Icons */
+.icon {
+  margin-top: 4px;
+}
+.mg-eye {
+  margin: 12px;
+}
+/* Animations */
+@keyframes horizontal-animation {
+  0% {
+    margin-left: 100px;
+  }
+  50% {
+    margin-left: -20px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  35% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes anim-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
