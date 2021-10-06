@@ -1,0 +1,25 @@
+.box-log {
+  background-color: #edf2f7;
+}
+.box-log-in {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 4% !important;
+  padding-bottom: 4% !important;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-log {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.form-log input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.required {
+  color: red;
+}

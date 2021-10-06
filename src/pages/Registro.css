@@ -1,0 +1,23 @@
+.box-reg {
+  background-color: #edf2f7;
+}
+.box-reg-in {
+  background-color: #ffffff;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-left: 4% !important;
+  padding-right: 4% !important;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-reg {
+  margin: 20px;
+}
+.buttom-reg {
+  margin-top: 20px;
+}
+.eye-reg {
+  display: flex;
+}

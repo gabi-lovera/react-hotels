@@ -1,0 +1,33 @@
+.box-home {
+  background-color: #edf2f7;
+}
+.box-home-in {
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 60px !important;
+}
+.box-card {
+  animation-name: anim-opacity;
+  animation-duration: 1.1s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.box-card:hover {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.box-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.staricon-card {
+  font-size: 20px;
+}
+.staricon-card:hover {
+  transform: scale(1.3);
+  color: #ffc107;
+}
+.staricon-card:active {
+  transform: scale(1.5);
+  color: #fbf7eb;
+}

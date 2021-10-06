@@ -1,0 +1,15 @@
+.box-flex {
+  display: flex;
+  margin-top: 1% !important;
+  margin-bottom: 1% !important;
+  margin-left: 2% !important;
+  margin-right: 2% !important;
+}
+.flex-fav {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.icon-remove:hover {
+  color: red;
+  transform: scale(1.1);
+}
