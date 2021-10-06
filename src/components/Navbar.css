@@ -1,0 +1,7 @@
+.icon-fav:hover {
+  color: grey;
+  transform: scale(1.1);
+}
+.heading-flex {
+  display: flex;
+}

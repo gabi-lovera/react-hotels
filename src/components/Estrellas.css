@@ -1,0 +1,13 @@
+.div-score {
+  margin-bottom: 10px !important;
+}
+.inputStar {
+  display: none !important;
+}
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+}
+.div-star {
+  display: flex;
+}
