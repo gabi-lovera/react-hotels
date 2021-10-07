@@ -1,15 +1,24 @@
-import { Box, Image, Badge, Grid, Heading, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Badge,
+  Grid,
+  Heading,
+  Stack,
+  Spinner,
+} from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import { StarIcon } from "@chakra-ui/icons";
 import IrArriba from "../helpers/IrArriba";
 import propiedades from "../data/Hoteles";
 import { FavContext } from "../helpers/FavContext";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import "./Inicio.css";
 
 export default function Inicio() {
   const history = useHistory();
   const { favoriteState, setFavoriteState } = useContext(FavContext);
+  const [loaded, setLoaded] = useState(false);
 
   const agregarFavoritos = (hotel) => {
     var hotelEncontrado = favoriteState.find((item) => item.id === hotel.id);
@@ -21,6 +30,12 @@ export default function Inicio() {
   const verHotel = (id) => {
     history.push(`hotel/${id}`);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 500);
+  }, []);
 
   return (
     <Box className="box-home" p="6">
@@ -48,7 +63,23 @@ export default function Inicio() {
                   color={"gray.200"}
                   className="staricon-card"
                 />
-                <Image src={propiedad.imageUrl} alt={propiedad.imageAlt} />
+                {loaded ? null : (
+                  <div
+                    className="div-spinner"
+                    style={{
+                      background: "#edf2f7",
+                      height: "400px",
+                      width: "100%",
+                    }}
+                  >
+                    <Spinner className="spinner" color="red.500" size="xl" />
+                  </div>
+                )}
+                <Image
+                  style={loaded ? {} : { display: "none" }}
+                  src={propiedad.imageUrl}
+                  alt={propiedad.imageAlt}
+                />
                 <Box
                   p="6"
                   onClick={() => {

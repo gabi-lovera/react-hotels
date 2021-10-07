@@ -61,8 +61,8 @@ const propiedades = [
   },
   {
     id: 6,
-    name: "/images/hoteles/hotel6.jpg",
-    imageUrl: "/images/5.jpg",
+    name: "Lowly Life",
+    imageUrl: "/images/hoteles/hotel6.jpg",
     imageAlt: "Rear view of modern home with pool",
     beds: 6,
     baths: 2,

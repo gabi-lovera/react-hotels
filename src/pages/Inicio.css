@@ -31,3 +31,11 @@
   transform: scale(1.5);
   color: #fbf7eb;
 }
+.div-spinner {
+  position: relative;
+}
+.spinner {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
