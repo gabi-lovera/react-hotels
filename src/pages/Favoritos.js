@@ -9,11 +9,14 @@ import {
   Icon,
   chakra,
   Tooltip,
+  Center,
 } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
-import { AiFillDelete } from "react-icons/ai";
+import { AiFillDelete, AiOutlineArrowRight } from "react-icons/ai";
+import { useHistory } from "react-router-dom";
 
 function Favoritos() {
+  const history = useHistory();
   const { favoriteState, setFavoriteState } = useContext(FavContext);
 
   const removerFavoritos = (id) => {
@@ -103,12 +106,23 @@ function Favoritos() {
                     </Box>
                   </Flex>
                   <Flex justifyContent="space-between" alignContent="center">
-                    <Box fontSize="2xl">
-                      <Box as="span" color={"gray.600"} fontSize="lg">
-                        £
-                      </Box>
-                      {hotel.formattedPrice}
-                    </Box>
+                    <Box fontSize="2xl">£{hotel.formattedPrice}</Box>
+                    <Center fontSize="2xl">
+                      <Tooltip
+                        label="Ir al hotel"
+                        bg="white"
+                        placement={"top"}
+                        color={"gray.800"}
+                        fontSize={"1.2em"}
+                      >
+                        <chakra.a href={"#"} display={"flex"}>
+                          <AiOutlineArrowRight
+                            onClick={() => history.push(`hotel/${hotel.id}`)}
+                            className="icon-arrow"
+                          />
+                        </chakra.a>
+                      </Tooltip>
+                    </Center>
                   </Flex>
                 </Box>
               </Box>

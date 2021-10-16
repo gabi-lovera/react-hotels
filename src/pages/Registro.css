@@ -12,6 +12,9 @@
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.box-reg-in label {
+  margin-top: 10px;
+}
 .form-reg {
   margin: 20px;
 }
